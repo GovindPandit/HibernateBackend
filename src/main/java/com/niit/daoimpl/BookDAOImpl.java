@@ -65,7 +65,7 @@ public class BookDAOImpl implements BookDAO
 		query.setParameter("name", "%"+name+"%");
 		return query.getResultList();
 	}
-
+	
 	public List<Book> displayBookByPriceHighToLow() 
 	{
 		Session session=HibernateUtil.getSession();
